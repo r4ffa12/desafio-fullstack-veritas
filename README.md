@@ -8,7 +8,7 @@ Este projeto implementa um sistema simples de gerenciamento de tarefas estilo Ka
 
 | Componente | Tecnologia | Descrição |
 | :--- | :--- | :--- |
-| **Backend** | **Go (Golang)** | API RESTful responsável pela lógica de negócios e persistência de dados em memória, utilizando o framework `go-chi/chi`. |
+| **Backend** | **Go (Golang)** | API REST full responsável pela lógica de negócios e persistência de dados em memória, utilizando o framework `go-chi/chi`. |
 | **Frontend** | **React & Vite** | Interface do usuário (UI) para visualizar e interagir com o quadro Kanban. O Vite foi escolhido para o setup rápido. |
 | **Documentação** | **Draw.io** | Diagrama de fluxo de usuário para mapear a interação do Frontend com o Backend. |
 
