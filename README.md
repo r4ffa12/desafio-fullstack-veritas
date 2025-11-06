@@ -26,17 +26,6 @@ O backend Go expõe endpoints RESTful para o gerenciamento completo das tarefas 
 | `DELETE` | `/tasks/{id}` | Remove uma tarefa por ID. | `204 No Content` |
 
 **Nota:** A aplicação salva os dados em memória. As tarefas são perdidas ao reiniciar o servidor Go.
+![Uploading flux.png…]()
 
-### 🐛 Detalhe da Correção da Rota DELETE
-
-A rota `DELETE` foi corrigida na estrutura do `go-chi/chi` para garantir o correto mapeamento de `/tasks/{id}`:
-
-```go
-// Código Corrigido no main.go
-r.Route("/tasks", func(r chi.Router) {
-    // ... outras rotas
-    r.Route("/{id}", func(r chi.Router) {
-        // O path já está capturando o ID no pai, o Delete deve ser apenas "/"
-        r.Delete("/", store.deleteTaskHandler) // Correção Aplicada
-    })
 })
